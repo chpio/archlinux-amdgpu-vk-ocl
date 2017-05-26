@@ -1,7 +1,7 @@
 # Maintainer: grmat <grmat@sub.red>
 
 pkgname=(libdrm-amdgpo opencl-amd vulkan-amd)
-pkgver=17.10.401251
+pkgver=17.10.414273
 pkgrel=1
 arch=('x86_64')
 url='http://www.amd.com'
@@ -15,11 +15,11 @@ DLAGENTS='https::/usr/bin/wget --referer https://support.amd.com/en-us/kb-articl
 
 prefix='amdgpu-pro-'
 major='17.10'
-minor='401251'
+minor='414273'
 shared="opt/amdgpu-pro/lib/x86_64-linux-gnu"
 
 source=("https://www2.ati.com/drivers/linux/ubuntu/${prefix}${major}-${minor}.tar.xz")
-sha256sums=('0a10cf39841bf77eacb393ca112ce5f82ca0c4ea728d2fce975732855c039600')
+sha256sums=('74fe9b93ae04e1279180389d58b3ed868d3be1b2c80823d1e2a0ca5232cdd916')
 
 pkgver() {
 	echo "${major}.${minor}"
